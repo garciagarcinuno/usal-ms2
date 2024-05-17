@@ -34,7 +34,7 @@
   <body>
 	<header>
 		<h2>Page Header</h2>
-		<nav><a href="#">Page 1</a> | <a href="#" aria-current="page">Page 2</a></nav>
+		<nav aria-label="Main"><a href="#">Page 1</a> | <a href="#" aria-current="page">Page 2</a></nav>
 	</header>
 	<aside style="margin: 1rem; border: 2px solid black; padding: 0.2rem; width: fit-content">
 		<h3><a href="#footer">More info</a></h3>
@@ -45,13 +45,13 @@
       <h1>Different accessible labelling methods</h1>
       <ol>
         <li>
-          <p lang="es">Este botón tiene <code>aria-label</code>:</p>
+          <p>This button has <code>aria-label</code>:</p>
           <button aria-label="Close">
             <span aria-hidden="true">X</span>
           </button>
         </li>
         <li>
-          <p lang="es">
+          <p>
             This button has <code>aria-label</code> and an explicit
             <code>lang</code> attribute:
           </p>
@@ -62,19 +62,19 @@
         <li>
           <p>
             This button has <code>aria-labelledby</code>, and the visually
-            hidden label is outside in Spanish:
+            hidden label is outside:
           </p>
           <button aria-labelledby="lalala1">
             <span aria-hidden="true">X</span>
           </button>
-          <span id="lalala1" class="visually-hidden" lang="es">Cerrar</span>
+          <span id="lalala1" class="visually-hidden">Close</span>
         </li>
         <li>
           <p>
-            This Spanish button has <code>aria-labelledby</code>, and the visually
+            This button has <code>aria-labelledby</code>, and the visually
             hidden and <code>aria-hidden</code> label is outside:
           </p>
-          <button aria-labelledby="lalala2" lang="es">
+          <button aria-labelledby="lalala2">
             <span aria-hidden="true">X</span>
           </button>
           <span id="lalala2" class="visually-hidden" aria-hidden="true"
@@ -111,7 +111,7 @@
           </button>
         </li>
       </ol>
-	  <p>Example of abbreviations, such as <abbr>Mr.</abbr>, <abbr>fig.</abbr>, <abbr>Wed.</abbr></p>
+	  
 	  <table>
   <caption>CAT Editor</caption>
   <tr>
@@ -130,9 +130,9 @@
     <td>90</td>
   </tr>
 </table>
-<details lang="es">
-	<summary lang="es">Traducción de palabra</summary>
-	<p lang="en">Word</p>
+<details>
+	<summary>Translation of Word</summary>
+	<p lang="es">Palabra</p>
 </details>
 <dl>
 	<dt>Lemma</dt>
